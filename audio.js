@@ -13,9 +13,9 @@ let playPause = document.querySelector(".play-pause");
 playPause.onclick = function() {
     if(audio.paused) {
         audio.play();
-    }
-    else {
+    }  else {
         audio.pause();
-    }
+        console.log("paused");
+   }
 }
 

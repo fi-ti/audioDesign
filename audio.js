@@ -11,8 +11,11 @@ volumeDown.addEventListener("click", () => { audio.volume += 0.2;});
 let playPause = document.querySelector(".play-pause");
 
 playPause.onclick = function() {
-    audio.play();
-    console.log("success");
-
+    if(audio.paused) {
+        audio.play();
+    }
+    else {
+        audio.pause();
+    }
 }
 
